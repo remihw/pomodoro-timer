@@ -1,0 +1,155 @@
+html, body {
+  background: #f9f9f9;
+  background: -webkit-linear-gradient(#f9f9f9, #e8e8e8);
+  background: -o-linear-gradient(#f9f9f9, #e8e8e8);
+  background: -moz-linear-gradient(#f9f9f9, #e8e8e8);
+  background: linear-gradient(#f9f9f9, #e8e8e8);
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+button {
+  font-family: inherit;
+}
+
+/*removes the extra padding on buttons in firefox*/
+input::-moz-focus-inner, button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+.center {
+  color: #484848;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.title {
+  color: #353535;
+  margin-bottom: 37px;
+  font-size: 35px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+#work {
+  font-size: 19px;
+  float: left;
+}
+
+#break {
+  font-size: 19px;
+  float: right;
+}
+
+.clear-float {
+  clear: both;
+}
+
+.btn-on {
+  background-color: #3d9060;
+  border-radius: 22px;
+  color: #f9f9f9;
+  font-size: 19px;
+  line-height: 22px;
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  margin-top: 13px;
+  cursor: pointer;
+  /*prevents selecting the text when clicking fast*/
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+}
+
+.btn-on:hover {
+  background-color: #59ad7c;
+}
+
+.btn-off {
+  background-color: #848685;
+  border-radius: 22px;
+  color: #f9f9f9;
+  font-size: 19px;
+  line-height: 22px;
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  margin-top: 13px;
+  cursor: default;
+  /*prevents selecting the text when clicking fast*/
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;  
+}
+
+#work-length, #break-length {
+  font-size: 19px;
+  margin: 0 2px 0 2px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#timer-status {
+  font-size: 19px;
+  margin: 42px 0 24px 0;
+}
+
+#timer-status > span {
+  color: #d33434;
+  font-weight: bold;
+}
+
+#tomato {
+  background-color: #d33434;
+  border-radius: 99px;
+  width: 249px;
+  height: 197px;
+  margin: 0 auto;
+  box-shadow: inset 0px -5px 9px 5px rgba(183, 35, 35, 0.5);
+}
+
+#tomato > img {
+  margin: -6px 0 0 35px;
+  width: 68px;
+  height: 28px;
+  position: absolute;
+}
+
+#btn-start, #btn-pause, #btn-stop {
+  background-color: #d33434;
+  color: #ffffff;
+  border: 2px solid #de8686;
+  border-radius: 6px;
+  margin: 51px 1px 5px 1px;
+  width: 65px;
+  height: 35px;
+  font-size: 15px;
+  text-transform: uppercase;
+  line-height: 30px;
+  cursor: pointer;
+  outline: none;
+}
+
+#btn-pause {
+  display: none;
+}
+
+#btn-start:hover, #btn-pause:hover, #btn-stop:hover {
+  background-color: #b12424;
+}
+
+#tomato-time {
+  color: #f4f4f4;
+  font-size: 56px;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Pomodoro Timer</title>
+  <meta name="viewport" content="width=device-width">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="center">
+    <div class="title">Pomodoro Timer</div>
+    <div id="work">
+      <div>Work length:</div>
+      <div class="btn-on btn-minus work">-</div>
+      <div id="work-length">25:00</div>
+      <div class="btn-on btn-plus work">+</div>
+    </div>
+    <div id="break">
+      <div>Break length:</div>
+      <div class="btn-on btn-minus break">-</div>
+      <div id="break-length">05:00</div>
+      <div class="btn-on btn-plus break">+</div>
+    </div>
+    <div class="clear-float"></div>
+    <div id="timer-status">Press START to begin</div>
+    <div id="tomato">
+      <img src="img/tom_crown.png">
+      <button id="btn-start">Start</button>
+      <button id="btn-pause">Pause</button>
+      <button id="btn-stop">Stop</button>
+      <div id="tomato-time">20:00</div>
+    </div>
+  </div>
+  
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
