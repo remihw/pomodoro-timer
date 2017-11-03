@@ -111,3 +111,8 @@ $(".btn-plus").on("click", function() {
     }
   }
 });
+
+$("#btn-test-alarm").on("click", function() {
+  var alarm = new Audio("../pomodoro-timer/audio/alarm_sound.mp3");
+  alarm.play();
+});

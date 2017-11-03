@@ -100,9 +100,20 @@ input::-moz-focus-inner, button::-moz-focus-inner {
   vertical-align: middle;
 }
 
+#btn-test-alarm {
+  display: inline-block;
+  color: #2d7836;
+  margin: 28px 0 0 0;
+}
+
+#btn-test-alarm:hover {
+  color: #59ad7c;
+  cursor: pointer;
+}
+
 #timer-status {
   font-size: 19px;
-  margin: 42px 0 24px 0;
+  margin: 40px 0 24px 0;
 }
 
 #timer-status > span {
